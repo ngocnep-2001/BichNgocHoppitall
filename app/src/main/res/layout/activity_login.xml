@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".login_Activity">
+
+    <TextView
+        android:id="@+id/tv_App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+       android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+        android:text="Bich Ngoc Hospital "
+        android:textColor="@color/yealow500"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_App"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="Màn hình Login"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:hint="username"
+        android:inputType="text"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_DangKi"
+        android:layout_below="@+id/edt_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/input_bg"
+        android:text="Đăng Nhập" />
+
+    <TextView
+        android:id="@+id/tv_DangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="86dp"
+        android:text="Đăng kí tài khoản?"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
